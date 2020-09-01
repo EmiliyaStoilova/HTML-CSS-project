@@ -1,0 +1,307 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: #ccc;
+}
+header
+{
+	background-color: #333;
+}
+nav ul
+{
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #333;
+}
+nav li
+{
+	float: left;
+}
+nav li a 
+{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+}
+nav li a:hover
+{
+	background-color: #111;
+}
+#logo
+{
+	width: 80px;
+	float: left;
+}
+#menu-icon 
+{
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: white url(image/menu-icon.png);
+}
+a:hover#menu-icon 
+{
+  background-color: #111;
+}
+
+.flex-container 
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+article
+{
+	flex: 15%;
+	align-items: center;
+    margin-left: 1%;
+    padding: 10px;
+}
+.article
+{
+	margin: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+    margin-top: 20px;
+}
+article .article img
+{
+	width: 100%;
+    height: auto;
+}
+article a
+{
+	text-decoration: none;
+}
+article .article a:hover
+{
+	opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+
+section
+{
+	margin: 0;
+	background-color: #ccffcc;
+	flex: 55%;
+	padding: 20px;
+	border: 3px solid #006600;
+	border-top: none;
+	border-bottom: none;
+	font-size: 20px;
+}
+section p
+{
+	text-align: justify;
+}
+h1
+{
+	text-align: left;
+	font-size: 35px;
+}
+section hr
+{
+	color: black;
+	background-color: black;
+	height: 1.5px;
+}
+section ul
+{
+	padding-left: 25px;
+}
+#image
+{
+	position: relative;
+	width: 50%;
+	float: left;
+	padding-right: 3%;
+}
+#img
+{
+	margin: 10px;
+	padding: 0 10%;
+    float: left;
+    width: 80%;
+    justify-content: center;
+}
+
+section img
+{
+	width: 100%;
+    height: auto;
+}
+aside
+{
+	flex: 21%;
+	padding: 20px;
+	align-content: center;
+}
+aside .asidebar
+{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    margin-left: 20%;
+}
+aside .asidebar:hover 
+{
+    border: 1px solid #777;
+}
+div.asidebar img 
+{
+    width: 100%;
+    height: auto;
+}
+div.desc 
+{
+    padding: 15px;
+    text-align: center;
+}
+h2
+{
+	text-align: center;
+}
+
+footer
+{
+	clear: both;
+	background-color: #111;
+	text-align: center;
+	color: white;
+}
+/* fOOTER SOCIAL MEDIA*/
+.fa 
+{
+  padding: 7px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover 
+{
+    opacity: 0.7;
+}
+.fa-facebook 
+{
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter 
+{
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram 
+{
+  background: #125688;
+  color: white;
+}
+
+@media screen and (max-width: 992px)
+{
+	article
+	{
+		flex: 10%;
+		margin: 0;
+		padding: 2%;
+	}
+	section
+	{
+		flex: 40%;
+		border: none;
+	}
+	#img
+	{
+		display: none;
+	}
+	aside
+	{
+		flex: 10%;
+	}
+}
+
+
+@media screen and (max-width: 768px)
+{
+	article
+	{		
+		background-color: #ccc;
+	}
+	section
+	{
+		border: none;
+		background-color: #ccc;
+	}
+	#img
+	{
+		display: none;
+	}
+    aside
+    {
+    	margin: 0 20%;
+    }
+}
+
+@media only screen and (max-width : 640px) 
+{
+
+  #menu-icon 
+  {
+    display: inline-block;
+  }
+  nav ul, nav:active ul 
+  { 
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background: #333;
+    border: 5px solid;
+    width: 40%;
+    border-radius: 0 4px 4px 4px;
+    z-index: 1;
+  }
+  nav li 
+  {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+  nav:hover ul 
+  {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px)
+{
+	article
+	{
+		padding: 0 30%;
+	}
+	section
+	{
+		border: none;
+		margin: 5% 0;
+		background-color: #ccffdd;
+	}
+	#img
+	{
+		display: inline;
+	}
+	aside
+	{
+		padding: 0 5%;
+	}
+}

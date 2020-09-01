@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Регистрация </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/register.css">
+		<script type="text/javascript" src="register.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<img id="logo" src="image/zdrave-logo2.png">
+					<ul>
+						<li> <a href="index.html"> Начало </a> </li>
+					    <li> <a href="recipe.html"> Рецепти </a> </li>
+					    <li> <a href="exercise.html"> Упражнения </a> </li>
+					    <li> <a href="register.html"> Регистрация </a> </li>
+					</ul>
+				</ul>
+			</nav>
+		</header>
+		<div id="form">
+			<h1> Регистрация </h1>
+			<form onsubmit="Validation();">
+
+				<div id="name">
+					<label for="Firstname" for="Lastname"> Име:<span>*</span>  </label><br>
+					<input type="text" name="Fistname" id="firstname" class="name" placeholder="Име" onblur="FName();">
+					<input type="text" name="Lastname" id="lastname" class="name" placeholder="Фамилия" onblur="LName()">
+				</div> <br>
+				
+				<div id="pass">
+					<label for="Password"> Парола:<span>*</span>  </label>
+					<input type="password" name="Password" id="password" class="pass" placeholder="Парола" onblur="Pass();">
+ 					
+					<label for="Password"> Повторете паролата:<span>*</span>  </label>
+					<input type="password" name="Password" id="RePassword" class="pass" placeholder="Парола" onblur="RePass();">
+				</div> <br>
+				
+				<div id="email">
+					<label for="Email"> E-mail:<span>*</span> </label>
+					<input type="email" class="classEmail" name="Email" id="IDemail" placeholder="E-mail" onblur="Email()">
+				</div> <br>
+				
+				<div id="bday">
+					<label for="Birthday"> Дата на раждане:<span>*</span> </label><br>
+					<select id="day">
+						<option hidden> Ден </option>
+						<option> 1 </option>
+						<option> 2 </option>
+						<option> 3 </option>
+						<option> 4 </option>
+						<option> 5 </option>
+						<option> 6 </option>
+						<option> 7 </option>
+						<option> 8 </option>
+						<option> 9 </option>
+						<option> 10 </option>
+						<option> 11 </option>
+						<option> 12 </option>
+						<option> 13 </option>
+						<option> 14 </option>
+						<option> 15 </option>
+						<option> 16 </option>
+						<option> 17 </option>
+						<option> 18 </option>
+						<option> 19 </option>
+						<option> 20 </option>
+						<option> 21 </option>
+						<option> 22 </option>
+						<option> 23 </option>
+						<option> 24 </option>
+						<option> 25 </option>
+						<option> 26 </option>
+						<option> 27 </option>
+						<option> 28 </option>
+						<option> 29 </option>
+						<option> 30 </option>
+						<option> 31 </option>
+					</select>
+					<select id="month">
+						<option hidden> Месец </option>
+						<option> Януари </option>
+						<option> Февруари </option>
+						<option> Март </option>
+						<option> Април </option>
+						<option> Май </option>
+						<option> Юни </option>
+						<option> Юли </option>
+						<option> Август </option>
+						<option> Септември </option>
+						<option> Октомври </option>
+						<option> Ноември </option>
+						<option> Декември </option>
+					</select>
+					<select id="year">
+						<option hidden> Година </option>
+						<option> 2018 </option>
+						<option> 2017 </option>
+						<option> 2016 </option>
+						<option> 2015 </option>
+						<option> 2014 </option>
+						<option> 2013 </option>
+						<option> 2012 </option>
+						<option> 2011 </option>
+						<option> 2010 </option>
+						<option> 2009 </option>
+						<option> 2008 </option>
+						<option> 2007 </option>
+						<option> 2006 </option>
+						<option> 2005 </option>
+						<option> 2004 </option>
+						<option> 2003 </option>
+						<option> 2002 </option>
+						<option> 2001 </option>
+						<option> 2000 </option>
+						<option> 1999 </option>
+						<option> 1998 </option>
+						<option> 1997 </option>
+						<option> 1996 </option>
+						<option> 1995 </option>
+						<option> 1994 </option>
+						<option> 1993 </option>
+						<option> 1992 </option>
+						<option> 1991 </option>
+						<option> 1990 </option>
+						<option> 1989 </option>
+						<option> 1988 </option>
+						<option> 1987 </option>
+						<option> 1986 </option>
+						<option> 1985 </option>
+						<option> 1984 </option>
+						<option> 1983 </option>
+						<option> 1982 </option>
+						<option> 1981 </option>
+						<option> 1980 </option>
+						<option> 1979 </option>
+						<option> 1978 </option>
+						<option> 1977 </option>
+						<option> 1976 </option>
+						<option> 1975 </option>
+						<option> 1974 </option>
+						<option> 1973 </option>
+						<option> 1972 </option>
+						<option> 1971 </option>
+						<option> 1970 </option>
+						<option> 1969 </option>
+						<option> 1968 </option>
+						<option> 1967 </option>
+						<option> 1966 </option>
+						<option> 1965 </option>
+						<option> 1964 </option>
+						<option> 1963 </option>
+						<option> 1962 </option>
+						<option> 1961 </option>
+						<option> 1960 </option>
+						<option> 1959 </option>
+						<option> 1958 </option>
+						<option> 1957 </option>
+						<option> 1956 </option>
+						<option> 1955 </option>
+						<option> 1954 </option>
+						<option> 1953 </option>
+						<option> 1952 </option>
+						<option> 1951 </option>
+						<option> 1950 </option>
+					</select>
+				</div><br>
+
+				<div id="gender">
+					<div id="pol">
+						<label for="Gender"> Пол: </label>
+					</div>
+					<div id="option">
+						<label> <input type="radio" name="Gender" > Мъж </label>
+	  					<label> <input type="radio" name="Gender"> Жена </label>
+					</div>
+				</div><br><br>
+				
+				<div id="tel">
+					<label for="Tel"> Телефонен номер </label>
+	  				<input type="tel" name="Tel" value="+359" id="phone" class="Rphone" onblur="Phone();">
+				</div> <br>
+	  			
+	  			<div id="rules">
+	  				<label for="Checkbox"> Приемам условията<span>*</span> </label>
+					<input type="checkbox" name="Checkbox" required>
+	  			</div> <br><br>
+
+				<div id="buttons">
+					<input type="submit"  value="Регистрация" id="submit">
+	  				<input type="reset"  value="Изчисти" id="reset">					
+				</div>
+	  			
+			</form>
+		</div>	
+	</body>
+</html>

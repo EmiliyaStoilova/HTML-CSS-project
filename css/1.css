@@ -1,0 +1,266 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ *{
+    box-sizing: border-box;
+}
+/* Full-width input fields */
+
+.pass {
+	width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.passError {
+	width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px solid red;
+    background: #f1f1f1;
+}
+
+.emailInput {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.emailInputError {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px solid red;
+    background: #f1f1f1;
+}
+
+.phoneInput {
+	width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    box-sizing: border-box;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    background-image: url('http://samoistina.com/2/flag/bulgarflag.gif');
+    background-size: 20px 20px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.phoneInputError {
+	width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 2px solid red;
+    background: #f1f1f1;
+    background-image: url('http://samoistina.com/2/flag/bulgarflag.gif');
+    background-size: 20px 20px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.userNameInput{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.userNameInputError{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px solid red;
+    background: #f1f1f1;
+}
+
+.userNameInput::-webkit-input-placeholder {
+    text-align: right;
+}
+
+
+label {
+width: 100%;
+}
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.inline{
+    display: inline;
+}
+
+.name{
+    width: 49%;
+    border: none;
+    background: #f1f1f1;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+}
+
+.nameError{
+    width: 49%;
+    border: 2px solid red;
+    background: #f1f1f1;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+}
+
+.birth{
+    width: 34%;
+    border: none;
+    background: #f1f1f1;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+}
+
+.birthError{
+    width: 34%;
+    border: 2px solid red;
+    background: #f1f1f1;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+p{
+    text-align: center;
+}
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+select {
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTaHNomqHQpNiHoyJhk5iKdsnend6EVX1Ip3uAyh_FXGx42R4p) 96% / 15% no-repeat #eee;
+}
+
+.genderClass {
+width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(https://americanaddictioncenters.org/wp-content/uploads/2016/09/gender_addiction.jpg) 96% / 15% no-repeat #eee;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px)
+ {
+    .cancelbtn, .signupbtn 
+    {
+       width: 100%;
+    }
+}
